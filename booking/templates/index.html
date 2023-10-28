@@ -1,0 +1,18 @@
+<h1>Welcome to the Djanghotel</h1>
+
+<div class = 'allRooms'>
+    {% for x in rooms %}
+    <div class ='roomnumber'>
+        {{x.room.room_number}}
+    </div>
+    <div class="numbeds">
+        {{x.room.num_beds}}
+    </div>
+    <div class="'description">
+        {{x.room.description}}
+    </div>
+    <div class="cost">
+        {{x.cost}}
+    </div>
+    {% endfor %}
+</div>

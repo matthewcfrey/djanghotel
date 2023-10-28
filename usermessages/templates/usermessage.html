@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Djanghotel - Message Us</title>
+</head>
+<body>
+    <form id="messageform" action="" method="POST">
+        {% csrf_token %}
+        <label>Your email address</label><br>
+        <input type="text" id="uemail" name="uemail" requried><br>
+        <label>Your message</label><br>
+        <textarea type="text" id="umessage" name="umessage" rows="25" cols="50" required></textarea><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
